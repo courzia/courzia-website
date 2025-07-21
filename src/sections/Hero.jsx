@@ -25,7 +25,7 @@ math, and discipline behind high-level
 decision-making in environments.`;
 
   return (
-    <section id="home" className="flex flex-col justify-end min-h-screen">
+    <section id="home" className="flex flex-col justify-end min-h-screen ">
       <AnimatedHeaderSection
         subTitle={"COURZIA"}
         title={"smart winning formula"}
@@ -38,7 +38,7 @@ decision-making in environments.`;
       {/* Fallback Image */}
       {!modelLoaded && (
         <div
-          className="absolute inset-0 -z-40 flex items-center justify-center"
+          className="absolute inset-0 -z-40 flex items-center justify-center overflow-hidden"
           style={{ width: "100vw", height: "100vh" }}
         >
           <img
