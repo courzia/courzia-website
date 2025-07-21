@@ -180,13 +180,13 @@ const AnimatedHeaderSection = ({
         <div className="py-12 lg:px-20 sm:py-16 lg:text-end">
           <AnimatedTextLines
             text={text}
-            className={`font-light uppercase value-text-responsive ${textColor}`}
+            className={`font-semibold sm:font-light uppercase value-text-responsive ${textColor}`}
           />
 
           <div className="relative ">
-            <button className="aesthetic-shimmer-button h-[3rem]" onClick={handleclick}>
+            <button className="aesthetic-shimmer-button-dark h-[3rem]" onClick={handleclick}>
               <div className="flex items-center gap-2">
-                <p className="text-sm font-light tracking-[0.19rem] uppercase text-gray-700 flex items-center gap-2">
+                <p className="text-sm font-light tracking-[0.19rem] uppercase text-whtie -700 flex items-center gap-2">
                   get your book now
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

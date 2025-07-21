@@ -1,0 +1,306 @@
+@keyframes shimmer {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Main Aesthetic Shimmer Button */
+.aesthetic-shimmer-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem; /* 8px */
+  border: 1px solid rgba(139, 115, 85, 0.2);
+  background: linear-gradient(110deg, #f5f1eb, 45%, #e8dcc6, 55%, #f5f1eb);
+  background-size: 200% 100%;
+  padding: 0 2rem; /* 32px */
+  font-weight: 500;
+  font-size: 0.875rem; /* 14px */
+  color: #4a4a4a; /* dark gray text */
+  letter-spacing: 0.025em; /* slight letter spacing */
+  transition: all 0.3s ease;
+  animation: shimmer 3s ease-in-out infinite;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(139, 115, 85, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Hover State */
+.aesthetic-shimmer-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(139, 115, 85, 0.15);
+  color: #2a2a2a;
+  border-color: rgba(139, 115, 85, 0.3);
+}
+
+/* Active State */
+.aesthetic-shimmer-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(139, 115, 85, 0.1);
+}
+
+/* Focus State */
+.aesthetic-shimmer-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.2);
+}
+
+/* Dark Variant (for contrast) */
+.aesthetic-shimmer-button-dark {
+  display: inline-flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: linear-gradient(110deg, #1a1a1a, 45%, #2a2a2a, 55%, #1a1a1a);
+  background-size: 200% 100%;
+  padding: 0 2rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #f5f1eb;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+  animation: shimmer 3s ease-in-out infinite;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.aesthetic-shimmer-button-dark:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Minimal Variant */
+.aesthetic-shimmer-button-minimal {
+  display: inline-flex;
+  height: 2.5rem; /* 40px */
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border: none;
+  background: linear-gradient(110deg, transparent, 45%, rgba(139, 115, 85, 0.1), 55%, transparent);
+  background-size: 200% 100%;
+  padding: 0 1.5rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #4a4a4a;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+  animation: shimmer 4s ease-in-out infinite;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.aesthetic-shimmer-button-minimal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(139, 115, 85, 0.05);
+  border-radius: 0.375rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.aesthetic-shimmer-button-minimal:hover::before {
+  opacity: 1;
+}
+
+.aesthetic-shimmer-button-minimal:hover {
+  color: #2a2a2a;
+}
+
+/* Gold Accent Variant */
+.aesthetic-shimmer-button-gold {
+  display: inline-flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(205, 164, 96, 0.3);
+  background: linear-gradient(110deg, #faf7f0, 45%, #f0e68c, 55%, #faf7f0);
+  background-size: 200% 100%;
+  padding: 0 2rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #8b6914;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+  animation: shimmer 2.5s ease-in-out infinite;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(205, 164, 96, 0.1);
+}
+
+.aesthetic-shimmer-button-gold:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(205, 164, 96, 0.2);
+  color: #6b5011;
+  border-color: rgba(205, 164, 96, 0.4);
+}
+
+/* Subtle Animation Variant */
+.aesthetic-shimmer-button-subtle {
+  display: inline-flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(139, 115, 85, 0.15);
+  background: linear-gradient(110deg, #f9f7f4, 45%, #f2ede3, 55%, #f9f7f4);
+  background-size: 200% 100%;
+  padding: 0 2rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #4a4a4a;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+  animation: shimmer 5s ease-in-out infinite;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(139, 115, 85, 0.05);
+}
+
+.aesthetic-shimmer-button-subtle:hover {
+  transform: translateY(-0.5px);
+  box-shadow: 0 2px 8px rgba(139, 115, 85, 0.1);
+  color: #2a2a2a;
+}
+
+/* --- */
+
+
+
+/* Shimmer Animation Keyframes */
+@keyframes shimmer {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Main Shimmer Button Class */
+.shimmer-button {
+  display: inline-flex;
+  height: 3rem; /* 48px */
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem; /* 6px */
+  border: 1px solid #1e293b; /* slate-800 */
+  background: linear-gradient(110deg, #000103, 45%, #1e2631, 55%, #000103);
+  background-size: 200% 100%;
+  padding: 0 1.5rem; /* 24px */
+  font-weight: 500;
+  color: #94a3b8; /* slate-400 */
+  transition: color 0.15s ease-in-out;
+  animation: shimmer 2s linear infinite;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Focus States */
+.shimmer-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #f8fafc, 0 0 0 4px #94a3b8; /* ring-2 ring-slate-400 ring-offset-2 ring-offset-slate-50 */
+}
+
+/* Hover Effect (Optional) */
+.shimmer-button:hover {
+  color: #cbd5e1; /* slightly lighter slate */
+}
+
+/* Active State (Optional) */
+.shimmer-button:active {
+  transform: translateY(1px);
+}
+
+/* Variant: Smaller Button */
+.shimmer-button-sm {
+  display: inline-flex;
+  height: 2.25rem; /* 36px */
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem; /* 4px */
+  border: 1px solid #1e293b;
+  background: linear-gradient(110deg, #000103, 45%, #1e2631, 55%, #000103);
+  background-size: 200% 100%;
+  padding: 0 1rem; /* 16px */
+  font-weight: 500;
+  font-size: 0.875rem; /* 14px */
+  color: #94a3b8;
+  transition: color 0.15s ease-in-out;
+  animation: shimmer 2s linear infinite;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Variant: Larger Button */
+.shimmer-button-lg {
+  display: inline-flex;
+  height: 3.5rem; /* 56px */
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem; /* 8px */
+  border: 1px solid #1e293b;
+  background: linear-gradient(110deg, #000103, 45%, #1e2631, 55%, #000103);
+  background-size: 200% 100%;
+  padding: 0 2rem; /* 32px */
+  font-weight: 500;
+  font-size: 1.125rem; /* 18px */
+  color: #94a3b8;
+  transition: color 0.15s ease-in-out;
+  animation: shimmer 2s linear infinite;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Variant: Different Color Scheme */
+.shimmer-button-blue {
+  display: inline-flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border: 1px solid #1e40af; /* blue-800 */
+  background: linear-gradient(110deg, #000103, 45%, #1e3a8a, 55%, #000103);
+  background-size: 200% 100%;
+  padding: 0 1.5rem;
+  font-weight: 500;
+  color: #60a5fa; /* blue-400 */
+  transition: color 0.15s ease-in-out;
+  animation: shimmer 2s linear infinite;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Variant: Disabled State */
+.shimmer-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  animation: none;
+}
+
+/* Utility Class for Just the Animation */
+.animate-shimmer {
+  animation: shimmer 2s linear infinite;
+}
+
+/* Utility Class for Shimmer Background */
+.bg-shimmer {
+  background: linear-gradient(110deg, #000103, 45%, #1e2631, 55%, #000103);
+  background-size: 200% 100%;
+}

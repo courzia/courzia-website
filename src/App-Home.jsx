@@ -16,26 +16,25 @@ const AppHome = () => {
 
 
 
+  // <ReactLenis root className="relative w-screen min-h-screen bg-black">
+  //* </ReactLenis> */}
   return (
-    <ReactLenis root className="relative w-screen min-h-screen bg-black">
-      {/* Main Content */}
-      <div
-        className="transition-opacity duration-1000"
-        style={{
-          overflowX: 'clip',
-          maxWidth: '100vw',
-        }}
-      >
-        <Navbar />
-        <Hero />
-        <ServiceSummary />
-        <Services />
-        <About />
-        <Works />
-        <ContactSummary />
-        <Contact />
-      </div>
-    </ReactLenis>
+    <div
+      className="transition-opacity duration-1000"
+      style={{
+        overflowX: 'clip',
+        maxWidth: '100vw',
+      }}
+    >
+      <Navbar />
+      <Hero />
+      <ServiceSummary />
+      <Services />
+      <About />
+      <Works />
+      <ContactSummary />
+      <Contact />
+    </div>
   );
 };
 
