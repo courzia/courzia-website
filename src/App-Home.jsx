@@ -26,6 +26,12 @@ const AppHome = () => {
         maxWidth: '100vw',
       }}
     >
+      <div className="fixed top-2 left-4 sm:left-8 z-100 ">
+        <img
+          src="/images/courzia-logo.png"
+          className="h-12 sm:h-18"
+        />
+      </div>
       <Navbar />
       <Hero />
       <ServiceSummary />
