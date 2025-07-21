@@ -42,7 +42,7 @@ decision-making in environments.`;
           style={{ width: "100vw", height: "100vh" }}
         >
           <img
-            src="../public/images/circle.png"
+            src="/images/circle.png"
             alt="Loading preview"
             className="max-w-full max-h-full object-contain opacity-90"
             style={{
