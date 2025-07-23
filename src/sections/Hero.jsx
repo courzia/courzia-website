@@ -158,7 +158,7 @@ const AnimatedHeaderSection = ({
   return (
     <div className="relative" ref={contextRef}>
       <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}>
-        <div ref={headerRef} className="flex flex-col justify-center gap-12 pt-16 sm:gap-16 lg:px-20">
+        <div ref={headerRef} className="flex flex-col justify-center gap-10 pt-16  sm:gap-16 lg:px-20">
           <p className={`text-sm font-light tracking-[0.5rem] uppercase px-10 ${textColor} relative`}>
             COURZIA
           </p>
@@ -174,15 +174,15 @@ const AnimatedHeaderSection = ({
         </div>
       </div>
 
-      <div className={`relative px-10 ${textColor}`}>
+      <div className={`relative  px-10 ${textColor}`}>
         <div className="py-12 lg:px-20 sm:py-16 lg:text-end">
           <AnimatedTextLines
             text={text}
-            className={`font-light uppercase value-text-responsive ${textColor}`}
+            className={`font-light uppercase value-text-responsive mb-2  ${textColor}`}
           />
-          <div className="relative ">
+          <div className="relative mt-8  sm:mt-4">
             <button className="aesthetic-shimmer-button-dark bg-gradient-to-br from-black via-black to-black gold/50 text-white h-[3rem]" onClick={handleclick}>
-              <div className="h-[3px] w-full absolute bottom-1 bg-gradient-to-r from-transparent via-gold to-transparent " />
+              <div className="h-[5px] w-full absolute bottom-1 bg-gradient-to-r from-transparent via-gold to-transparent " />
               <div className="flex items-center gap-2">
                 <p className="text-sm font-light tracking-[0.19rem] uppercase text-whtie -700 flex items-center gap-2 flex gap-2 items-center justify-center">
                   get your book at
