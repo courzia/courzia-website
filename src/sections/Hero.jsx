@@ -23,7 +23,7 @@ const Hero = () => {
   const text = `designed to teach you the real mindset, math, and discipline \n behind high-level decision-making in environments.`;
 
   return (
-    <section id="home" className="flex flex-col justify-center pt-60 sm:pt-0 sm:justify-end  min-h-screen ">
+    <section id="home" className="flex flex-col justify-center  sm:pt-0 sm:justify-end  min-h-screen ">
       <AnimatedHeaderSection
         subTitle={"COURZIA"}
         title={"smart winning formula"}
