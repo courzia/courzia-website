@@ -20,9 +20,7 @@ const Hero = () => {
   }
 
   const isMobile = useMediaQuery({ maxWidth: 853 });
-  const text = `designed to teach you the real mindset,
-math, and discipline behind high-level
-decision-making in environments.`;
+  const text = `designed to teach you the real mindset, math, and discipline \n behind high-level decision-making in environments.`;
 
   return (
     <section id="home" className="flex flex-col justify-end min-h-screen ">
@@ -164,12 +162,12 @@ const AnimatedHeaderSection = ({
           <p className={`text-sm font-light tracking-[0.5rem] uppercase px-10 ${textColor} relative`}>
             COURZIA
           </p>
-          <div className="px-10">
+          <div className="px-10 sm:py-0 pt-8 sm:mt-0   bg-clip-text bg-gradient-to-r  from-black  to-gold orange-200 ">
             <h1
-              className={`flex flex-col gap-12 uppercase hero-text-responsive sm:gap-16 md:block ${textColor} mb-[14px]`}
+              className={`flex flex-col gap-12 uppercase hero-text-responsive sm:gap-16 md:block text-transparent mb-[14px]`}
             >
               {titleParts.map((part, index) => (
-                <span key={index}>{part} </span>
+                <span key={index}> {part} </span>
               ))}
             </h1>
           </div>
@@ -180,29 +178,28 @@ const AnimatedHeaderSection = ({
         <div className="py-12 lg:px-20 sm:py-16 lg:text-end">
           <AnimatedTextLines
             text={text}
-            className={`font-semibold sm:font-light uppercase value-text-responsive ${textColor}`}
+            className={`font-light uppercase value-text-responsive ${textColor}`}
           />
-
           <div className="relative ">
-            <button className="aesthetic-shimmer-button-dark h-[3rem]" onClick={handleclick}>
+            <button className="aesthetic-shimmer-button-dark bg-gradient-to-br from-black via-black to-black gold/50 text-white h-[3rem]" onClick={handleclick}>
+              <div className="h-[3px] w-full absolute bottom-1 bg-gradient-to-r from-transparent via-gold to-transparent " />
               <div className="flex items-center gap-2">
-                <p className="text-sm font-light tracking-[0.19rem] uppercase text-whtie -700 flex items-center gap-2">
-                  get your book now
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-arrow-right"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
+                <p className="text-sm font-light tracking-[0.19rem] uppercase text-whtie -700 flex items-center gap-2 flex gap-2 items-center justify-center">
+                  get your book at
+                  <dv className="flex items-center justify-center">
+                    <span className="text-lg font-bold text-gold"> 0</span>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      width="20" height="16" viewBox="0 0 24 24"
+                      fill="none" stroke="#cfa355" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"
+                    >
+                      <path d="M6 3h12" />
+                      <path d="M6 8h12" />
+                      <path d="m6 13 8.5 8" />
+                      <path d="M6 13h3" />
+                      <path d="M9 13c6.667 0 6.667-10 0-10" />
+                    </svg>
+                  </dv>
                 </p>
               </div>
               {open &&

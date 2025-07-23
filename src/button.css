@@ -56,24 +56,17 @@
   align-items: center;
   justify-content: center;
   border-radius: 0.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: linear-gradient(110deg, #1a1a1a, 45%, #2a2a2a, 55%, #1a1a1a);
-  background-size: 200% 100%;
+
   padding: 0 2rem;
   font-weight: 500;
   font-size: 0.875rem;
-  color: #f5f1eb;
   letter-spacing: 0.025em;
-  transition: all 0.3s ease;
-  animation: shimmer 3s ease-in-out infinite;
-  outline: none;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
 }
 
 .aesthetic-shimmer-button-dark:hover {
-  transform: translateY(-1px);
+  transform: translateY(1px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   color: #ffffff;
   border-color: rgba(255, 255, 255, 0.2);

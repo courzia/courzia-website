@@ -126,11 +126,11 @@ body {
   @apply text-[68px] sm:text-[118px] md:text-[126px] lg:text-[152px] leading-9 sm:leading-16 lg:leading-20;
 }
 @utility hero-text-responsive {
-  @apply text-[68px] sm:text-[118px] md:text-[126px] lg:text-[150px] leading-5 sm:leading-24 lg:leading-30  font-bold sm:font-normal;
+  @apply text-[60px] sm:text-[118px] md:text-[126px] lg:text-[150px] leading-5 sm:leading-24 lg:leading-30  font-bold sm:font-normal;
 }
 
 @utility value-text-responsive {
-  @apply text-2xl md:text-[26px] lg:text-[22px];
+  @apply text-sm  md:text-[26px] lg:text-[22px];
 }
 
 @utility marquee-text-responsive {
