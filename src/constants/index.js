@@ -1,9 +1,4 @@
-// index.js
-// export const servicesData = [
-// ];
-//
-
-export const CONTACT_LINK = "https://t.me/Courzia"
+export const CONTACT_LINK = "https://t.me/Courziavipcourse"
 
 export const servicesData = [
   {

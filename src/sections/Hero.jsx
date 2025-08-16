@@ -28,6 +28,7 @@ const Hero = () => {
         subTitle={"COURZIA"}
         title={"smart winning formula"}
         text={text}
+        tectclasses="backdrop-blur-xl text-black "
         textColor={"text-black"}
         handleclick={handleclick}
         open={open}
@@ -122,6 +123,7 @@ const AnimatedHeaderSection = ({
   subTitle,
   title,
   text,
+  tectclasses,
   textColor,
   withScrollTrigger = false,
   handleclick,
@@ -178,45 +180,44 @@ const AnimatedHeaderSection = ({
         <div className="py-12 lg:px-20 sm:py-16 lg:text-end">
           <AnimatedTextLines
             text={text}
-            className={`font-light uppercase value-text-responsive mb-2  ${textColor}`}
+            className={`font-light uppercase value-text-responsive mb-2  ${textColor}  ${tectclasses}`}
           />
           <div className="relative mt-8  sm:mt-4">
             <button className="aesthetic-shimmer-button-dark bg-gradient-to-br from-black via-black to-black gold/50 text-white h-[3rem]" onClick={handleclick}>
-              <div className="h-[5px] w-full absolute bottom-1 bg-gradient-to-r from-transparent via-gold to-transparent " />
+              <div className="h-[5px] w-full absolute bottom-1 bg-gradient-to-r from-transparent via-[#26a7e9] to-transparent " />
               <div className="flex items-center gap-2">
                 <p className="text-sm font-light tracking-[0.19rem] uppercase text-whtie -700 flex items-center gap-2 flex gap-2 items-center justify-center">
-                  get your book at
-                  <dv className="flex items-center justify-center">
-                    <span className="text-lg font-bold text-gold"> 0</span>
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                      width="20" height="16" viewBox="0 0 24 24"
-                      fill="none" stroke="#cfa355" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round"
-                    >
-                      <path d="M6 3h12" />
-                      <path d="M6 8h12" />
-                      <path d="m6 13 8.5 8" />
-                      <path d="M6 13h3" />
-                      <path d="M9 13c6.667 0 6.667-10 0-10" />
-                    </svg>
-                  </dv>
+                  join telegram
+                  <div className="flex items-center justify-center">
+                    <>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7225)" />
+                        <path d="M22.9866 10.2088C23.1112 9.40332 22.3454 8.76755 21.6292 9.082L7.36482 15.3448C6.85123 15.5703 6.8888 16.3483 7.42147 16.5179L10.3631 17.4547C10.9246 17.6335 11.5325 17.541 12.0228 17.2023L18.655 12.6203C18.855 12.4821 19.073 12.7665 18.9021 12.9426L14.1281 17.8646C13.665 18.3421 13.7569 19.1512 14.314 19.5005L19.659 22.8523C20.2585 23.2282 21.0297 22.8506 21.1418 22.1261L22.9866 10.2088Z" fill="white" />
+                        <defs>
+                          <linearGradient id="paint0_linear_87_7225" x1="16" y1="2" x2="16" y2="30" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#37BBFE" />
+                            <stop offset="1" stop-color="#007DBB" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </>
+
+                  </div>
                 </p>
               </div>
               {open &&
-                <div className="fixed -top-[225px] lg:-top-[208px]  rounded-lg bg-[#e5e5e0]  h-[220px]  lg:h-[200px] overflow-hidden p-[3px] ">
+                <div className="fixed -top-[260px] lg:-top-[268px]  rounded-lg bg-[#e5e5e0]  h-[250px]  lg:h-[265px] overflow-hidden p-[3px] ">
                   <div className=" red-100 h-full rounded-lg aesthetic-shimmer-button " >
-                    <div className="">
-                      <h1 className="value-text-responsive text-center">
-                        Read the{" "}
-                        <a
-                          href="/tnc"
-                          className="lg:font-semibold underline"
-                        >
-                          terms and conditions
-                        </a>{" "}
-                        before clicking below
-                      </h1>
-                      <p className="text-center mt-6  text-white">
+                    <div className="space-y-5">
+                      <p className="font-semibold text-sm text-start ">
+                        BOOK , EXCLUSIVE VIDEOS,
+                        LIFETIME LOSS RECOVERY TIPS
+                        AND MORE—ALL COMPLETELY FREE!
+                        HURRY, THIS IS A LIMITED-TIME
+                        OFFER!
+                      </p>
+
+                      <p className="text-center text-white">
                         <a
                           href={CONTACT_LINK}
                           target="_blank"
@@ -226,6 +227,16 @@ const AnimatedHeaderSection = ({
                           GET YOUR BOOK
                         </a>
                       </p>
+                      <h1 className="value-text-responsive text-center text-xs">
+                        Read the{" "}
+                        <a
+                          href="/tnc"
+                          className="lg:font-semibold underline"
+                        >
+                          terms and conditions
+                        </a>{" "}
+                        before clicking below
+                      </h1>
                     </div>
                   </div>
                 </div>
